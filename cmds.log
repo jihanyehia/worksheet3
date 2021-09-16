@@ -1,0 +1,235 @@
+    1  passwd
+    2  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    3  exit
+    4  pwd
+    5  ls
+    6  mkdir projects
+    7  cd projects/
+    8  ls
+    9  git init
+   10  history > cmds.log
+   11  history
+   12  pwd
+   13  ls -a
+   14  git status
+   15  git add cmds.log 
+   16  git status
+   17  git commit -m "Committing my history"
+   18  git config --global user.email "jihan.yehia@sjsu.edu"
+   19  git config --global user.name  "Jihan Yehia"
+   20  git commit -m "Committing my history"
+   21  git status
+   22  git remote add origin https://github.com/jihanyehia/worksheet1.git
+   23  git push -u origin master
+   24  history > cmds.log
+   25  git status
+   26  git add cmds.log
+   27  git commit -m "Updating my history"
+   28  git push origin master
+   29  cd ..
+   30  ls
+   31  mkdir test
+   32  cd test
+   33  git clone https://github.com/jihanyehia/worksheet1.git
+   34  ls
+   35  cd worksheet1/
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd ..
+   40  ls
+   41  rm -r  test
+   42  ls
+   43  'pwd'
+   44  pwd
+   45  `pwd`
+   46  echo pwd
+   47  echo `pwd`
+   48  vi ~/.bashrc
+   49  ls /home
+   50  ls /root
+   51  sudo ls /root
+   52  exit
+   53  pwd
+   54  ls
+   55  cd projects
+   56  ls
+   57  cd ..
+   58  exit
+   59  history
+   60  ls -l
+   61  ls -latr /
+   62  exit
+   63  pwd
+   64  ls
+   65  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+   66  ls
+   67  head amazon_reviews_us_Books_v1_02.tsv 
+   68  head cut -f12 amazon_reviews_us_Books_v1_02.tsv 
+   69  cut -f12 amazon_reviews_us_Books_v1_02.tsv | head
+   70  cut -f12 amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   71  vi verified.txt 
+   72  grep Y verified.txt > Y.txt
+   73  wc Y.txt 
+   74  grep N verified.txt >N.txt
+   75  wc N.txt 
+   76  wc Y.txt > counts.txt
+   77  wc N.txt >> counts.txt 
+   78  cat counts.txt 
+   79  vi counts.txt 
+   80  pwd
+   81  ls
+   82  cd projects/
+   83  ls
+   84  .
+   85  cd .
+   86  cd ..
+   87  mkdir worksheet2
+   88  mv counts.txt verified.txt worksheet2/
+   89  ls
+   90  cd worksheet2
+   91  ls
+   92  git init
+   93  touch counts.txt 
+   94  history > cmds.log
+   95  touch cmds.log 
+   96  git status
+   97  git add counts.txt
+   98  git add cmds.log 
+   99  git status
+  100  git commit -m "Worksheet 2"
+  101  git remote add origin https://github.com/jihanyehia/worksheet2.git
+  102  git branch -M main
+  103  git push -u origin main
+  104  git status
+  105  git remote add origin https://github.com/jihanyehia/worksheet2.git
+  106  git branch -M main
+  107  git push -u origin main
+  108  git branch -M main
+  109  git push -u origin main
+  110  git branch -M main
+  111  git push -u origin main
+  112  ll
+  113  cd ..
+  114  ;;
+  115  ll
+  116  pwd
+  117  mkdir test
+  118  cd test
+  119  git clone https://github.com/jihanyehia/worksheet2.git
+  120  ls
+  121  cd worksheet2/
+  122  ls
+  123  cd ../..
+  124  ls
+  125  rm -r test
+  126  rm -rf test
+  127  ls
+  128  exit
+  129  echo $Home
+  130  cd
+  131  cd ~
+  132  pwd
+  133  etc/passwd
+  134  cat /etc/
+  135  cat /etc/passwd
+  136  groups
+  137  groups <yehia>
+  138  cat /etc/group
+  139  mkdir temp
+  140  ls-l
+  141  ls
+  142  ls -l
+  143  chmod 6 temp
+  144  ls -l
+  145  chmod 675 temp
+  146  ls -l
+  147  rmdir -R temp
+  148  rmdir temp
+  149  l -l
+  150  mkdir temp
+  151  ls -l
+  152  chmod u=rw temp
+  153  ls -l
+  154  cd temp
+  155  ls temp
+  156  ls -l temp
+  157  chmod u=rwx temp
+  158  ls -l temp
+  159  ls temp
+  160  cd temp
+  161  mkdir temp2
+  162  cd ..
+  163  chmod u=rw temp
+  164  cd temp
+  165  ls -l temp
+  166  ls - temp
+  167  ls temp
+  168  man mv
+  169  ls
+  170  head -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  171  pwd
+  172  cat /etc/passwd
+  173  cat /etc/group
+  174  mkdir temp
+  175  chmod u=rw temp
+  176  ls temp
+  177  ls -l temp
+  178  cd temp
+  179  mkdir directory1
+  180  ls
+  181  mv directory1/ directory2/
+  182  ls
+  183  cp -r directory2/ directory3/
+  184  ls
+  185  ls /proc/ | grep "mem"
+  186  ls /proc/ | grep "cpu"
+  187  head /proc/meminfo 
+  188  tail /proc/cpuinfo 
+  189  ls -lh
+  190  cut -f 14 amazon_reviews_us_Books_v1_02.tsv | grep -i "\bgreat\b" | wc
+  191  script a1.txt
+  192  vi a1.txt 
+  193  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a.txt > a.txt.clean
+  194  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a1.txt > a.txt.clean
+  195  vi a.txt.clean 
+  196  tr -cd '\11\12\15\40-\176' < a.txt.clean > a.txt.clean2
+  197  vi a.txt.clean2
+  198  sed -i "s///g" a.txt.clean2
+  199  vi a.txt.clean2
+  200  git init
+  201  ls -l
+  202  git commit -m "Assignment1"
+  203  git log
+  204  git status
+  205  git add a.txt.clean2
+  206  git commit -m "Assignment 1"
+  207  git status
+  208  pwd
+  209  cd projects
+  210  ls
+  211  cd ..
+  212  ls -alh
+  213  mkdir assignment1
+  214  mv a.txt.clean2 assignment1/
+  215  ls assignment1/
+  216  cd assignment1/
+  217  git init
+  218  git add a.txt.clean2 
+  219  git status
+  220  git commit -m "Assignment1"
+  221  git remote add origin https://github.com/jihanyehia/Assignment1.git
+  222  git branch -M main
+  223  git push -u origin main
+  224  exit
+  225  head -n1 amazon_reviews_us_Books_v1_02.tsv 
+  226  head -n4 amazon_reviews_us_Books_v1_02.tsv 
+  227  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  228  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr
+  229  ls
+  230  exit
+  231  head -n1 amazon_reviews_us_Books_v1_02.tsv
+  232  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  233  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  234  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr 
+  235  history > cmds.log
